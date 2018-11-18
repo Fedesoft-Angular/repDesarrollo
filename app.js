@@ -12,7 +12,7 @@ var educativos = require('./routes/educativos');
 var proveedores = require('./routes/proveedores');
 var retosxusuario = require('./routes/retosxusuario');
 var juegos = require('./routes/juegos');
-
+var premiosredimidos = require('./routes/premiosredimidos');
 
 var app = express();
 
@@ -27,5 +27,6 @@ app.use('/api/educativos', educativos);
 app.use('/api/proveedores', proveedores);
 app.use('/api/retosxusuario', retosxusuario);
 app.use('/api/juegos', juegos);
+app.use('/api/premiosredimidos', premiosredimidos);
 module.exports = app;
 //exports.app = functions.https.onRequest(app);
